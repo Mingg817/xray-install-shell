@@ -7,7 +7,7 @@
 使用方法
 
 ```shell
-export PORT= 1234 //vmess 端口
-export UUID= 2D72D428-XXXX-XXXX-XXXX-XXXXXXX //vmess UUID
+export PORT=1234 //vmess 端口
+export UUID=2D72D428-XXXX-XXXX-XXXX-XXXXXXX //vmess UUID
 curl -fsSL https://github.com/Mingg817/xray-install-shell/raw/main/install.sh | sudo -E bash
 ```

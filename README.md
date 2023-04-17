@@ -13,5 +13,7 @@ curl -fsSL https://github.com/Mingg817/xray-install-shell/raw/main/install.sh | 
 ```
 
 参考：
+
 https://github.com/XTLS/Xray-install
+
 https://github.com/willoong9559/XrayWarp

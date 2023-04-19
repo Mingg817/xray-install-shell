@@ -12,7 +12,6 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install-geodata
 
-mkdir /var/log/xray
 
 cat>/usr/local/etc/xray/config.json<<EOF
 {

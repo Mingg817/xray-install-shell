@@ -109,7 +109,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyr
 sudo apt -y update
 sudo apt -y install cloudflare-warp
 
-warp-cli register
+echo y|warp-cli register
 
 warp-cli set-mode proxy
 

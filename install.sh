@@ -68,15 +68,7 @@ cat>/usr/local/etc/xray/config.json<<EOF
                 "domain": [
                     "domain:openai.com"
                 ]
-            },
-            {
-                "inboundTag": [
-                    "inbound"
-                ],
-                "type": "field",
-                "outboundTag": "freedom"
             }
-        ]
     },
     "log": {
         "access": "/var/log/xray/access.log",

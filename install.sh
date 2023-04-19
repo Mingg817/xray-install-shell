@@ -62,6 +62,7 @@ cat>/usr/local/etc/xray/config.json<<EOF
         }
     ],
     "routing": {
+        "domainStrategy": "IPOnDemand",
         "rules": [
             {
                 "type": "field",
@@ -69,6 +70,13 @@ cat>/usr/local/etc/xray/config.json<<EOF
                 "domain": [
                     "domain:openai.com"
                 ]
+            },
+            {
+                "type": "field",
+                "ip": [
+                    "::/0"
+                ],
+                "outboundTag": "proxy"
             }
         ]
     },

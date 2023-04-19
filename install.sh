@@ -59,29 +59,14 @@ cat>/usr/local/etc/xray/config.json<<EOF
                     }
                 ]
             }
-        },
-        {
-            "tag": "proxy_ipv6",
-            "protocol": "socks",
-            "settings": {
-                "servers": [
-                    {
-                        "address": "127.0.0.1",
-                        "port": 40000
-                    }
-                ],
-                "domainStrategy": "UseIPv6"
-            }
         }
-    ],
     "routing": {
         "rules": [
             {
                 "type": "field",
-                "outboundTag": "proxy_ipv6",
+                "outboundTag": "proxy",
                 "domain": [
-                    "geosite:netflix",
-                    "geosite:google"
+                    "domain:openai.com"
                 ]
             },
             {
@@ -89,7 +74,7 @@ cat>/usr/local/etc/xray/config.json<<EOF
                     "inbound"
                 ],
                 "type": "field",
-                "outboundTag": "proxy"
+                "outboundTag": "freedom"
             }
         ]
     },

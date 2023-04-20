@@ -28,14 +28,15 @@ cat>/usr/local/etc/xray/config.json<<EOF
                         "alterId": 64
                     }
                 ]
-            },
-            "sniffing": {
-                "enabled": true,
-                "destOverride": [
-                    "http",
-                    "tls"
-                ]
             }
+            # ,
+            # "sniffing": {
+            #     "enabled": true,
+            #     "destOverride": [
+            #         "http",
+            #         "tls"
+            #     ]
+            # }
         }
     ],
     "outbounds": [

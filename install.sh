@@ -76,6 +76,7 @@ cat>/usr/local/etc/xray/config.json<<EOF
                 "ip": [
                     "::/0"
                 ],
+                "domainStrategy": "UseIPv6",
                 "outboundTag": "proxy"
             }
         ]
